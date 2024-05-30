@@ -13,7 +13,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-
 with open('model.pkl', 'rb') as file:
     # Load the pickled object
     loaded_model = pickle.load(file)
@@ -24,7 +23,7 @@ def predict_text(text):
     return "Yes, it's a scam" if prediction[0] == 1 else "No, it's not a scam"
 
 def app():
-    st.title("👨‍💻 Text-Base Scam Detection Tool")
+    st.title("👨‍💻 Text-Based Scam Detection Tool")
 
     # User input for the subreddit's content
     user_input = st.text_area("Paste the subreddit content here:", height=250)

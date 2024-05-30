@@ -1,5 +1,5 @@
-streamlit==1.35.0  # Version used in your current deployment logs
-pandas==1.2.3  # Example version, replace with the exact version you used
-scikit-learn==0.24.1  # Example version, replace with the exact version you used
-numpy==1.19.5  # Example version, replace with the exact version you used
-pickle-mixin==1.0.2  # If you use pickle, specify the correct version
+streamlit==1.35.0
+pandas>=1.3.0,<3.0.0
+scikit-learn==0.24.1
+numpy==1.19.5
+pickle-mixin==1.0.2
